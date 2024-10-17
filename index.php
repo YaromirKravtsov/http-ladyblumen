@@ -217,10 +217,7 @@ function getImage($url)
                         <li class="header__item"><a
                                 href="#<?php  echo $translations['orderProcess'] ?>"><?php  echo $translations['orderProcess'] ?></a>
                         </li>
-                        <li>
-                            <a class="header-mobile--sale-btn btn text"
-                                href="<?php  echo $insta ?>"><?php  echo $translations['poster']['btn1-txt']; ?></a>
-                        </li>
+                       
                     </ul>
                 </nav>
                 <div class="footer__line"></div>
