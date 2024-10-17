@@ -76,7 +76,7 @@ function getImage($url)
                         </li>
                         <li>
                             <a class="header-mobile--sale-btn btn text"
-                                href="<? echo $insta ?>"><?php echo $translations['poster']['btn1-txt']; ?></a>
+                                href="<?php echo $insta ?>"><?php echo $translations['poster']['btn1-txt']; ?></a>
                         </li>
                     </ul>
                 </nav>
@@ -121,7 +121,7 @@ function getImage($url)
                 <h1 class="title"><?php echo $translations['poster']['title']; ?></h1>
                 <h2 class="text"><?php echo $translations['poster']['text']; ?></h2>
                 <a class="poster__main--sale-btn btn text"
-                    href="<? echo $insta ?>"><?php echo $translations['poster']['btn1-txt']; ?></a>
+                    href="<?php echo $insta ?>"><?php echo $translations['poster']['btn1-txt']; ?></a>
                 <a class="poster__main--services-btn btn text"
                     href="#<?php echo $translations['services'] ?>"><?php echo $translations['poster']['btn2-txt']; ?></a>
             </div>
@@ -135,7 +135,7 @@ function getImage($url)
                     <h2 class="title"><?php echo $translations['about-me']['h2']; ?></h2>
                     <h3 class="title"><?php echo $translations['about-me']['h3']; ?></h3>
                     <p class="text"><?php echo $translations['about-me']['text']; ?></p>
-                    <a href="<? echo $insta ?>"
+                    <a href="<?php echo $insta ?>"
                         class=" about-us-btn btn text"><?php echo $translations['about-me']['contact-btn']; ?></a>
                 </div>
                 <img src="<?php getImage('about-me'); ?>" alt="">
@@ -181,10 +181,10 @@ function getImage($url)
                         foreach ($translations['orderProcess-sel']['processes'] as $key => $process) {
                             ?>
                             <div class="orderProcess__process">
-                                <img src="<? getImage($process['img']) ?> " alt="">
+                                <img src="<?phpgetImage($process['img']) ?> " alt="">
                                 <div class="orderProcess__content">
-                                    <h4 class="title"><? echo $process['title'] ?> </h4>
-                                    <p class="text"><? echo $process['text'] ?></p>
+                                    <h4 class="title"><?php echo $process['title'] ?> </h4>
+                                    <p class="text"><?php echo $process['text'] ?></p>
                                 </div>
                             </div>
                             <?php
@@ -202,7 +202,7 @@ function getImage($url)
                 <div class="footer__sale-row">
                     <div class="logo">Lady Blumen Hannover</div>
                     <a class="poster__main--sale-btn btn text"
-                        href="<? echo $insta ?>"><?php echo $translations['footer']['sale']; ?></a>
+                        href="<?php echo $insta ?>"><?php echo $translations['footer']['sale']; ?></a>
                 </div>
                 <nav>
                     <ul>
@@ -219,7 +219,7 @@ function getImage($url)
                         </li>
                         <li>
                             <a class="header-mobile--sale-btn btn text"
-                                href="<? echo $insta ?>"><?php echo $translations['poster']['btn1-txt']; ?></a>
+                                href="<?php echo $insta ?>"><?php echo $translations['poster']['btn1-txt']; ?></a>
                         </li>
                     </ul>
                 </nav>
