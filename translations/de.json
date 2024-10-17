@@ -1,0 +1,65 @@
+{
+    "title": "Willkommen auf unserer Seite",
+    "description": "Dies ist eine Beispielseite auf Deutsch.",
+    "home": "Home",
+    "aboutMe": "Über mich",
+    "services": "Dienstleistungen",
+    "orderProcess": "Bestellvorgang",
+    "poster": {
+        "title": "Ihr Florist für Blumensträuße und Dekorationen in Hannover",
+        "text": "Individuelle Blumenarrangements für jeden Anlass – Lieferung in Hannover und Umgebung",
+        "btn1-txt": "Jetzt auf Instagram bestellen",
+        "btn2-txt": "Unsere Dienstleistungen"
+    },
+    "about-me": {
+        "h2": "Über mich",
+        "h3": "Floristik mit Liebe und Kreativität in Hannover",
+        "text": "Ich bin Olga, eine leidenschaftliche Floristin, die Blumensträuße und Dekorationen mit Liebe zum Detail kreiert. Mit meiner abgeschlossenen Ausbildung in der Floristik und meinem Hintergrund im Ballett vereine ich Kreativität und Ästhetik in jedem meiner Arrangements. Es ist mir eine Freude, euch und eure Liebsten mit meinen Blumenkreationen zu erfreuen und besondere Momente noch schöner zu gestalten.",
+        "contact-btn": "Kontakt aufnehmen"
+    },
+    "services-sel": {
+        "title": "Dienstleistungen",
+        "blocks": [
+            {
+                "title": "Geschenkbox",
+                "img": "1",
+                "text": "Unsere Blumen-Geschenkboxen sind perfekte, liebevoll gestaltete Überraschungen. Jede Box wird sorgfältig arrangiert, um Freude und Eleganz zu schenken"
+            },
+            {
+                "title": "Blumensträuße",
+                "img": "2",
+                "text": "Unsere Blumensträuße sind individuell und liebevoll gestaltet – perfekt für jeden Anlass. Lassen Sie sich von einzigartigen Kompositionen begeistern, die Freude und Eleganz vereinen."
+            },
+            {
+                "title": "Decor",
+                "img": "3",
+                "text": "Unsere floralen Dekorationen schaffen eine stilvolle Atmosphäre für jedes Event – von Hochzeiten bis hin zu Firmenfeiern. Mit Liebe zum Detail gestalten wir jeden Raum elegant und einladend."
+            }
+        ]
+    },
+    "orderProcess-sel": {
+        "h2": "Bestellvorgang",
+        "h3": "Einfach und schnell – Ihr Weg zu individuellen Blumenarrangements",
+        "processes": [
+            {
+                "img": "orderProcess/1",
+                "title": "<span>1.</span> Kontakt aufnehmen",
+                "text" : "Kontaktieren Sie uns einfach über Instagram, um Ihre Bestellung aufzugeben oder Fragen zu stellen."
+            },
+            {
+                "img": "orderProcess/2",
+                "title": "<span>2.</span> Wünsche und Budget besprechen",
+                "text" : "Teilen Sie uns Ihre Vorstellungen und Ihr Budget mit, damit wir das perfekte Arrangement für Sie erstellen können."
+            },
+            {
+                "img": "orderProcess/3",
+                "title": "<span>3</span>. Fertigen Blumenstrauß erhalten",
+                "text" : "Erhalten Sie Ihren individuell gestalteten Blumenstrauß pünktlich und ganz nach Ihren Wünschen."
+            }
+        ]
+    },
+    "footer": {
+        "sale": "Bestellung über Instagram",
+        "last": "© 2024 Lady Blumen Hannover. Alle Rechte vorbehalten."
+    }
+}
