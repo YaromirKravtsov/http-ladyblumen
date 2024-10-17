@@ -1,7 +1,7 @@
 <?php 
 
 
-$insta = 'https://www.instagram.com/direct/t/17842293899360548/';
+$insta = 'https://www.instagram.com/lady_blumen_hannover/';
 // Получаем запрошенный URI
 $request = $_SERVER['REQUEST_URI'];
 
