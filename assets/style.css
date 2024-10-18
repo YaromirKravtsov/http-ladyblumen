@@ -427,7 +427,65 @@ body.mobile.open {
     row-gap: 15px;
 
     margin-top: 20px;
+
+
 }
+
+.animTop {
+    transform: translateY(-40px);
+    opacity: 0;
+}
+.animTop.visible{
+    transition: all 2s ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.animBottom {
+    transform: translateY(50px);
+    opacity: 0;
+}
+.animBottom.visible{
+    transition: all 2s ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.animOpacity{
+    opacity: 0;
+}
+
+.animOpacity.visible{
+    transition: all 2s;
+    opacity: 1;
+}
+/* Left animation */
+.animLeft {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.animLeft.visible {
+    transition: all 2s ease;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* Left animation */
+.animRight {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.animRight.visible {
+    transition: all 2s ease;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
 
 
 .btn {
@@ -875,6 +933,8 @@ body.mobile.open {
 .orderProcess__process>img {
     width: 85px;
     height: 85px;
+    border: 2px solid #F28CA6;
+    border-radius: 50%;
 }
 
 .orderProcess__content {

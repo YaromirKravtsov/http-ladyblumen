@@ -63,10 +63,34 @@ window.addEventListener('scroll', function () {
     }
 });
 
+const animations = () => {
+    const handleIntersection = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Добавляем класс, если элемент видим
+                entry.target.classList.add('visible');
+            } /* else {
+                // Убираем класс, если элемент не видим (по желанию)
+                entry.target.classList.remove('visible');
+            } */
+        });
+    };
 
+    // Создаем экземпляр Intersection Observer
+    const observer = new IntersectionObserver(handleIntersection);
+
+    // Находим элементы, к которым нужно применять логику
+    const elements = document.querySelectorAll('.animation');
+
+    // Наблюдаем за каждым элементом
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+
+}
 
 document.addEventListener("DOMContentLoaded", function () {
-
+    animations();
     mobileHeader();
     wrapContainer();
     window.addEventListener('resize', wrapContainer);

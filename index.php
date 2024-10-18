@@ -32,7 +32,7 @@ if (file_exists($translationFile)) {
 function getImage($url)
 {
     /*     echo $url; */
-    echo '/assets/images/' . $url . '.png'; // возвращаем URL, чтобы использовать его в теге <img>
+    echo '/assets/images/' . $url . '.webp'; // возвращаем URL, чтобы использовать его в теге <img>
 }
 
 ?>
@@ -116,8 +116,8 @@ function getImage($url)
     </header>
     <section class="poster" id="<?php  echo $translations['home'] ?>">
         <div class="container">
-            <img src="<?php  getImage('poster/flower-l'); ?>" alt="" class="poster-left-img">
-            <div class="poster__main-row">
+            <img src="<?php  getImage('poster/flower-l'); ?>" alt="" class="poster-left-img animation animLeft">
+            <div class="poster__main-row animation animOpacity">
                 <h1 class="title"><?php  echo $translations['poster']['title']; ?></h1>
                 <h2 class="text"><?php  echo $translations['poster']['text']; ?></h2>
                 <a class="poster__main--sale-btn btn text"
@@ -125,20 +125,20 @@ function getImage($url)
                 <a class="poster__main--services-btn btn text"
                     href="#<?php  echo $translations['services'] ?>"><?php  echo $translations['poster']['btn2-txt']; ?></a>
             </div>
-            <img src="<?php  getImage('poster/flower-r'); ?>" alt="" class="poster-right-img">
+            <img src="<?php  getImage('poster/flower-r'); ?>" alt="" class="poster-right-img animation animRight">
         </div>
     </section>
     <section class="about-us" id="<?php  echo $translations['aboutMe'] ?>">
         <div class="container">
             <div class="about-us__row">
                 <div class="about-us__column">
-                    <h2 class="title"><?php  echo $translations['about-me']['h2']; ?></h2>
-                    <h3 class="title"><?php  echo $translations['about-me']['h3']; ?></h3>
-                    <p class="text"><?php  echo $translations['about-me']['text']; ?></p>
+                    <h2 class="title animation animBottom"><?php  echo $translations['about-me']['h2']; ?></h2>
+                    <h3 class="title animation animBottom"><?php  echo $translations['about-me']['h3']; ?></h3>
+                    <p class="text animation animBottom"><?php  echo $translations['about-me']['text']; ?></p>
                     <a href="<?php  echo $insta ?>"
-                        class=" about-us-btn btn text"><?php  echo $translations['about-me']['contact-btn']; ?></a>
+                        class=" about-us-btn btn text animation animBottom"><?php  echo $translations['about-me']['contact-btn']; ?></a>
                 </div>
-                <img src="<?php  getImage('about-me'); ?>" alt="">
+                <img class = "animation animBottom" src="<?php  getImage('about-me'); ?>" alt="">
             </div>
         </div>
     </section>
@@ -146,14 +146,14 @@ function getImage($url)
         <img src="<?php  echo getImage(url: 'services/bg1'); ?>" alt="" class="bg-l">
         <div class="container">
             <div class="services__row">
-                <h2 class="title">
+                <h2 class="title animation animOpacity">
                     <?php  echo $translations['services-sel']['title']; ?>
                 </h2>
-                <div class="services-block__row">
+                <div class="services-block__row ">
                     <?php 
                     foreach ($translations['services-sel']['blocks'] as $key => $block) {
                         ?>
-                        <div class="services__block">
+                        <div class="services__block animation animOpacity">
                             <img src="<?php  echo getImage(url: 'services/' . $block['img']); ?>"
                                 alt="<?php  echo $block['title']; ?>">
                             <h3 class="title"><?php  echo $block['title']; ?></h3>
@@ -172,15 +172,15 @@ function getImage($url)
     <section class="orderProcess" id="<?php  echo $translations['orderProcess'] ?>">
         <div class="container">
             <div class="orderProcess__row">
-                <h2 class="title"><?php  echo $translations['orderProcess-sel']['h2']; ?></h2>
-                <h3 class="title"><?php  echo $translations['orderProcess-sel']['h3']; ?></h3>
+                <h2 class="title animation animTop"><?php  echo $translations['orderProcess-sel']['h2']; ?></h2>
+                <h3 class="title animation animTop"><?php  echo $translations['orderProcess-sel']['h3']; ?></h3>
                 <div class="orderProcess__main-row">
-                    <img src="<?php  getImage(url: 'orderProcess/orderProcess'); ?>" alt="">
+                    <img class = "animation animTop"src="<?php  getImage(url: 'orderProcess/orderProcess'); ?>" alt="">
                     <div class="orderProcess__process-column">
                         <?php 
                         foreach ($translations['orderProcess-sel']['processes'] as $key => $process) {
                             ?>
-                            <div class="orderProcess__process">
+                            <div class="orderProcess__process animation animTop">
                                 <img src="<?php   getImage($process['img']) ?> " alt="">
                                 <div class="orderProcess__content">
                                     <h4 class="title"><?php   echo $process['title'] ?> </h4>
