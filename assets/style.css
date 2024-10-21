@@ -38,8 +38,11 @@ a {
 body {
     display: flex;
     flex-direction: column;
-
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100vw;
 }
+
 
 /* Fonts */
 

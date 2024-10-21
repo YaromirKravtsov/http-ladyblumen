@@ -9,31 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
-/* function wrapContainer() {
-    const poster = document.querySelector('.poster');
-    const leftImg = document.querySelector('.poster-left-img');
-    const mainRow = document.querySelector('.poster__main-row');
-    const rightImg = document.querySelector('.poster-right-img');
-    console.log(window.innerWidth, window.innerHeight);
-    if (window.innerWidth < 1170 && !document.querySelector('.poster .container')) {
-
-        const container = document.createElement('div');
-        container.classList.add('container');
-
-        poster.insertBefore(container, leftImg);
-
-        container.appendChild(leftImg);
-        container.appendChild(mainRow);
-        container.appendChild(rightImg);
-    } else if (window.innerWidth >= 1150 && document.querySelector('.poster .container')) {
-        const container = document.querySelector('.poster .container');
-        poster.insertBefore(leftImg, container);
-        poster.insertBefore(mainRow, container);
-        poster.insertBefore(rightImg, container);
-        container.remove();
-    }
-}
- */
 const mobileHeader = () => {
     if (window.innerWidth < 770) {
         document.body.classList.add('mobile');
@@ -67,22 +42,15 @@ const animations = () => {
     const handleIntersection = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Добавляем класс, если элемент видим
                 entry.target.classList.add('visible');
-            } /* else {
-                // Убираем класс, если элемент не видим (по желанию)
-                entry.target.classList.remove('visible');
-            } */
+            } 
         });
     };
 
-    // Создаем экземпляр Intersection Observer
     const observer = new IntersectionObserver(handleIntersection);
 
-    // Находим элементы, к которым нужно применять логику
     const elements = document.querySelectorAll('.animation');
 
-    // Наблюдаем за каждым элементом
     elements.forEach(element => {
         observer.observe(element);
     });
@@ -92,8 +60,6 @@ const animations = () => {
 document.addEventListener("DOMContentLoaded", function () {
     animations();
     mobileHeader();
-    wrapContainer();
-    window.addEventListener('resize', wrapContainer);
     window.addEventListener('resize', mobileHeader);
 });
 
