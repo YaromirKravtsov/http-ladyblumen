@@ -98,7 +98,7 @@ function getImage($url)
                     </a>
 
                 </div>
-                <button class="burger-icon">
+                <button class="burger-icon" aria-label="<?php ($language == 'de') ? 'Menü öffnen' : 'Открыть меню' ?>">
                     <svg class="burger-icon-close" width="20" height="16" viewBox="0 0 20 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <line y1="1" x2="20" y2="1" stroke="black" />
